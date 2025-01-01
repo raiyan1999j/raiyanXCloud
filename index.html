@@ -8,15 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/f1458b3047.js" crossorigin="anonymous"></script>
     <!-- main-css -->
      <link rel="stylesheet" href="./resource/css/style.css">
     <title>Document</title>
+    <!-- tailwind-config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens:{
+                'mobileS':{'min':'0px','max':'320px'}
+              }
+            },
+          },
+        };
+      </script>
 </head>
 <body class="max-w-[1600px] mx-auto">
     <!-- headerArea-start -->
      <header class="headerBg bg-cover">
         <!-- navbar-start -->
-         <nav class="w-[1320px] h-[98px] mx-auto flex flex-row justify-between items-center">
+         <nav class="w-[1320px] h-[98px] mx-auto flex flex-row justify-between items-center mobileS:hidden">
             <div class="w-[175.69px] h-10 relative">
                 <div class="w-5 h-[18px] absolute left-[69px] bottom-[31px]">
                     <img src="./resource/image/pageLogoSup.png" alt="pageLogoSup" class="h-full w-full object-contain">
@@ -48,6 +62,37 @@
             </div>
          </nav>
         <!-- navbar-finish -->
+         <!-- responsiveNav-start -->
+        <nav class="mobileS:block w-[300px] h-[98px] mx-auto overflow-hidden hidden">
+            <div class="group">
+                <span>
+                    <i class="fa-solid fa-bars text-white text-3xl"></i>
+                </span>
+
+                <div>
+                    <ul class="text-[#94A3B8] flex flex-col gap-y-6 hanken font-semibold text-base leading-6 tracking-[0.5px] bg-[#ffffff1a] px-4 py-3 rounded-lg transition-all duration-150 ease-linear translate-x-[-100%] group-hover:translate-x-0">
+                        <li>
+                            About Us
+                        </li>
+                        <li>Integration</li>
+                        <li>Pricing</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                        <li>
+                            <button class="rounded-lg w-[181px] h-12 flex justify-center items-center capitalize hanken font-semibold text-base leading-6 tracking-[0.5px] text-[#FFFFFF] border-2 broder-[#ffffff24]">
+                                join community
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rounded-lg w-[146px] h-12 flex justify-center items-center capitalize hanken font-semibold text-base leading-6 tracking-[0.5px] text-[#FFFFFF] border-2 broder-[#ffffff24] bg-[#ffffff1a]">
+                                launch app
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- responsiveNav-finish -->
      </header>
     <!-- headerArea-finish -->
 
