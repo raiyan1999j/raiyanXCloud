@@ -6,8 +6,11 @@
     .hanken {
         font-family: "Hanken Grotesk", serif;
       }
+    .inter{
+      font-family: "Inter", serif;
+    }
       .headerBg{
         background:url('../image/header.png');
       }
-      
+
   }
