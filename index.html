@@ -69,8 +69,8 @@
                     <i class="fa-solid fa-bars text-white text-3xl"></i>
                 </span>
 
-                <div>
-                    <ul class="text-[#94A3B8] flex flex-col gap-y-6 hanken font-semibold text-base leading-6 tracking-[0.5px] bg-[#ffffff1a] px-4 py-3 rounded-lg transition-all duration-150 ease-linear translate-x-[-100%] group-hover:translate-x-0">
+                <div class="fixed z-50 top-[50px]">
+                    <ul class="text-[#94A3B8] flex flex-col gap-y-6 hanken font-semibold text-base leading-6 tracking-[0.5px] bg-gray-500 px-4 py-3 rounded-lg transition-all duration-150 ease-linear translate-x-[-110%] group-hover:translate-x-0">
                         <li>
                             About Us
                         </li>
@@ -95,17 +95,17 @@
         <!-- responsiveNav-finish -->
         <!-- bannerArea-start -->
          <section class="pt-[102px] pb-[206px]">
-            <div class="w-[1320px] mx-auto">
-                <h1 class="hanken font-bold text-[72px] leading-[79.2px] text-center text-[#FFFFFF]">
-                    Revolutionize Your Visuals with <span class="block text-[#9b59b6]"> AI Generated Images</span>
+            <div class="w-[1320px] mx-auto mobileS:w-[320px]">
+                <h1 class="hanken font-bold text-[72px] leading-[79.2px] text-center text-[#FFFFFF] mobileS:block">
+                    Revolutionize Your Visuals with <span class="block text-[#9b59b6] mobileS:inline"> AI Generated Images</span>
                 </h1>
             </div>
-            <div class="w-[864px] mx-auto mt-[52px]">
+            <div class="w-[864px] mx-auto mt-[52px] mobileS:w-[320px]">
                 <div class="relative w-full h-16">
                     <div class="absolute h-full w-full">
                         <input type="text" class="bg-transparent w-full h-full font-normal leading-4 inter text-[#79767fcc] border border-[#79767fcc] rounded-lg pl-6" placeholder="Enter your prompt">
                     </div>
-                    <div class="absolute h-12 w-[168px] right-2 top-2">
+                    <div class="absolute h-12 w-[168px] right-2 top-2 mobileS:-right-2 mobileS:w-[160px]">
                         <button class="capitalize bg-[#6400E6] rounded-lg text-[#FFFFFF] w-full h-full flex justify-center items-center">
                             generate
                         </button>
